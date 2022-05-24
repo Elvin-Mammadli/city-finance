@@ -1,28 +1,25 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+$('.owl-carousel').owlCarousel({
+  items: 4,
+  margin: 46,
+})
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+const rangeInputs = document.querySelectorAll('input[type="range"]')
+const numberInput = document.querySelector('input[type="number"]')
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+function handleInputChange(e) {
+  let target = e.target
+  if (e.target.type !== 'range') {
+    target = document.getElementById('range')
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  const min = target.min
+  const max = target.max
+  const val = target.value
+
+  target.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%'
 }
+
+rangeInputs.forEach(input => {
+  input.addEventListener('input', handleInputChange)
+})
+
+numberInput.addEventListener('input', handleInputChange)

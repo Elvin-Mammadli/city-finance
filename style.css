@@ -71,11 +71,13 @@ div.main .container main {
 }
 
 div.main .container main .heading {
-  width: 470px;
+  width: 550px;
 }
 
 div.main .container main .heading h1 {
   margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: 700;
 }
 
 div.main .container main .heading h1 span {
@@ -125,6 +127,7 @@ div.main .container .cards {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 50px;
 }
 
 div.main .container .cards .card {
@@ -172,35 +175,35 @@ div.services-container .services h2 {
   margin-bottom: 20px;
 }
 
-div.services-container .services .cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-div.services-container .services .cards .card {
+div.services-container .services .owl-carousel .card {
   width: 250px;
+  height: 348px;
   border-radius: 8px;
   overflow: hidden;
   background-color: #fafafa;
-  -webkit-box-shadow: 0px 10px 26px rgba(0, 0, 0, 0.06);
-          box-shadow: 0px 10px 26px rgba(0, 0, 0, 0.06);
+  -webkit-box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.06);
 }
 
-div.services-container .services .cards .card div.img {
+div.services-container .services .owl-carousel .card div.img {
   height: 50%;
-  background-color: #cefbff;
-  text-align: right;
+  position: relative;
+  padding: 20px 0 0 20px;
 }
 
-div.services-container .services .cards .card div.img img {
-  width: 75%;
+div.services-container .services .owl-carousel .card div.img .card-img {
+  width: 70%;
+  position: absolute;
+  bottom: -7px;
+  right: 0;
 }
 
-div.services-container .services .cards .card div.text {
+div.services-container .services .owl-carousel .card div.img .icon {
+  width: 40px;
+  height: 40px;
+}
+
+div.services-container .services .owl-carousel .card div.text {
   height: 184px;
   padding: 24px 16px;
   display: -webkit-box;
@@ -215,11 +218,11 @@ div.services-container .services .cards .card div.text {
           justify-content: space-between;
 }
 
-div.services-container .services .cards .card div.text h6 {
+div.services-container .services .owl-carousel .card div.text h6 {
   font-size: 20px;
 }
 
-div.services-container .services .cards .card div.text div.body {
+div.services-container .services .owl-carousel .card div.text div.body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -228,27 +231,43 @@ div.services-container .services .cards .card div.text div.body {
           justify-content: space-between;
 }
 
-div.services-container .services .cards .card div.text div.body div.left {
+div.services-container .services .owl-carousel .card div.text div.body div.left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 5px;
 }
 
-div.services-container .services .cards .card div.text div.body div.right {
+div.services-container .services .owl-carousel .card div.text div.body div.right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 5px;
 }
 
-div.services-container .services .cards .card div.text button {
+div.services-container .services .owl-carousel .card div.text button {
   background-color: #00a5b4;
   padding: 14px 24px;
   color: #ffffff;
   border-radius: 8px;
   border: none;
   cursor: pointer;
+}
+
+div.services-container .services .owl-carousel .card1 {
+  background-color: #cefbff;
+}
+
+div.services-container .services .owl-carousel .card2 {
+  background-color: #fff1ce;
+}
+
+div.services-container .services .owl-carousel .card3 {
+  background-color: #ceffd0;
+}
+
+div.services-container .services .owl-carousel .card4 {
+  background-color: #fff1ce;
 }
 
 div.campaigns .container {
@@ -293,6 +312,7 @@ div.campaigns .container .cards {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 div.campaigns .container .cards .card {
@@ -374,71 +394,26 @@ div.calculations .container .calculations-box div.left div.loan-amount h6 {
   margin-bottom: 20px;
 }
 
-div.calculations .container .calculations-box div.left div.loan-amount div.slidecontainer {
-  /* Mouse-over effects */
-  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+div.calculations .container .calculations-box div.left div.loan-amount .slidercontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-div.calculations .container .calculations-box div.left div.loan-amount div.slidecontainer .slider {
-  -webkit-appearance: none;
-  /* Override default CSS styles */
-  -moz-appearance: none;
-       appearance: none;
-  width: 100%;
-  /* Full-width */
-  height: 10px;
-  /* Specified height */
-  border-radius: 10px;
-  background: #E6F6F3;
-  /* Grey background */
-  outline: none;
-  /* Remove outline */
-  opacity: 0.7;
-  /* Set transparency (for mouse-over effects on hover) */
-  -webkit-transition: .2s;
-  /* 0.2 seconds transition on hover */
-  -webkit-transition: opacity .2s;
-  transition: opacity .2s;
-}
-
-div.calculations .container .calculations-box div.left div.loan-amount div.slidecontainer .slider::-webkit-slider-runnable-track {
-  -webkit-appearance: none;
-  color: #13bba4;
-}
-
-div.calculations .container .calculations-box div.left div.loan-amount div.slidecontainer .slider:hover {
-  opacity: 1;
-  /* Fully shown on mouse-over */
-}
-
-div.calculations .container .calculations-box div.left div.loan-amount div.slidecontainer .slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  /* Override default look */
-  appearance: none;
-  width: 20px;
-  /* Set a specific slider handle width */
-  height: 20px;
-  /* Slider handle height */
-  border-radius: 50%;
-  border: 4px solid white;
-  background: #00a5b4;
-  /* Green background */
-  cursor: pointer;
-  /* Cursor on hover */
-}
-
-div.calculations .container .calculations-box div.left div.loan-amount div.slidecontainer .amounts {
-  width: 100%;
+div.calculations .container .calculations-box div.left div.loan-amount .slidercontainer .amounts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-div.calculations .container .calculations-box div.left div.loan-amount div.slidecontainer .amounts span {
-  font-size: 14px;
 }
 
 div.calculations .container .calculations-box div.left div.loan-period {
@@ -458,71 +433,26 @@ div.calculations .container .calculations-box div.left div.loan-period h6 {
   margin-bottom: 20px;
 }
 
-div.calculations .container .calculations-box div.left div.loan-period div.slidecontainer {
-  /* Mouse-over effects */
-  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+div.calculations .container .calculations-box div.left div.loan-period .slidercontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-div.calculations .container .calculations-box div.left div.loan-period div.slidecontainer .slider {
-  -webkit-appearance: none;
-  /* Override default CSS styles */
-  -moz-appearance: none;
-       appearance: none;
-  width: 100%;
-  /* Full-width */
-  height: 10px;
-  /* Specified height */
-  border-radius: 10px;
-  background: #E6F6F3;
-  /* Grey background */
-  outline: none;
-  /* Remove outline */
-  opacity: 0.7;
-  /* Set transparency (for mouse-over effects on hover) */
-  -webkit-transition: .2s;
-  /* 0.2 seconds transition on hover */
-  -webkit-transition: opacity .2s;
-  transition: opacity .2s;
-}
-
-div.calculations .container .calculations-box div.left div.loan-period div.slidecontainer .slider::-webkit-slider-runnable-track {
-  -webkit-appearance: none;
-  color: #13bba4;
-}
-
-div.calculations .container .calculations-box div.left div.loan-period div.slidecontainer .slider:hover {
-  opacity: 1;
-  /* Fully shown on mouse-over */
-}
-
-div.calculations .container .calculations-box div.left div.loan-period div.slidecontainer .slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  /* Override default look */
-  appearance: none;
-  width: 20px;
-  /* Set a specific slider handle width */
-  height: 20px;
-  /* Slider handle height */
-  border-radius: 50%;
-  border: 4px solid white;
-  background: #00a5b4;
-  /* Green background */
-  cursor: pointer;
-  /* Cursor on hover */
-}
-
-div.calculations .container .calculations-box div.left div.loan-period div.slidecontainer .amounts {
-  width: 100%;
+div.calculations .container .calculations-box div.left div.loan-period .slidercontainer .amounts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-div.calculations .container .calculations-box div.left div.loan-period div.slidecontainer .amounts span {
-  font-size: 14px;
 }
 
 div.calculations .container .calculations-box div.left div.total {
@@ -539,6 +469,10 @@ div.calculations .container .calculations-box div.left div.total {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+div.calculations .container .calculations-box div.left div.total h6 {
+  font-weight: 500;
 }
 
 div.calculations .container .calculations-box div.right {
@@ -749,6 +683,7 @@ div.partners-container .partners .partner-logos .brand-box {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 10px;
 }
 
 .useful-info-container .useful-info-box div.body .left .currency-boxes .arrow-box {
