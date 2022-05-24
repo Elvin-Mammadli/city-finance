@@ -1,0 +1,876 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+div.main {
+  background: -webkit-gradient(linear, left top, left bottom, from(#e5fffa), color-stop(83.7%, rgba(229, 255, 249, 0.262661)), to(rgba(229, 255, 249, 0)));
+  background: linear-gradient(180deg, #e5fffa 0%, rgba(229, 255, 249, 0.262661) 83.7%, rgba(229, 255, 249, 0) 100%);
+}
+
+div.main .container {
+  padding: 28px 10%;
+}
+
+div.main .container nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 42px;
+}
+
+div.main .container ul.links {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.main .container ul.links li > a {
+  text-decoration: none;
+  margin: 0 20px;
+  color: #424242;
+}
+
+div.main .container ul.links .btn {
+  background-color: #00a5b4;
+  padding: 14px 24px;
+  color: #ffffff;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin: 0 30px;
+}
+
+div.main .container main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.main .container main .heading {
+  width: 470px;
+}
+
+div.main .container main .heading h1 {
+  margin-bottom: 30px;
+}
+
+div.main .container main .heading h1 span {
+  color: #00a5b4;
+}
+
+div.main .container main .heading p {
+  margin-bottom: 40px;
+}
+
+div.main .container main .heading .btn {
+  background-color: #00a5b4;
+  padding: 14px 24px;
+  color: #ffffff;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+div.main .container main div.right {
+  width: 972px;
+  height: 100%;
+  background-image: url(./assets/bgcards.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.main .container main div.right img.female {
+  width: 60%;
+}
+
+div.main .container .cards {
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.main .container .cards .card {
+  width: 300px;
+  height: 200px;
+  color: #616161;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+div.main .container .cards .card * {
+  margin-bottom: 16px;
+}
+
+div.main .container .cards .card img {
+  width: 50px;
+  height: 50px;
+}
+
+div.services-container {
+  padding: 28px 10%;
+  background-color: #f5fffc;
+}
+
+div.services-container .services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.services-container .services h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+div.services-container .services .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.services-container .services .cards .card {
+  width: 250px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fafafa;
+  -webkit-box-shadow: 0px 10px 26px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 10px 26px rgba(0, 0, 0, 0.06);
+}
+
+div.services-container .services .cards .card div.img {
+  height: 50%;
+  background-color: #cefbff;
+  text-align: right;
+}
+
+div.services-container .services .cards .card div.img img {
+  width: 75%;
+}
+
+div.services-container .services .cards .card div.text {
+  height: 184px;
+  padding: 24px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.services-container .services .cards .card div.text h6 {
+  font-size: 20px;
+}
+
+div.services-container .services .cards .card div.text div.body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.services-container .services .cards .card div.text div.body div.left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+}
+
+div.services-container .services .cards .card div.text div.body div.right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+}
+
+div.services-container .services .cards .card div.text button {
+  background-color: #00a5b4;
+  padding: 14px 24px;
+  color: #ffffff;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+div.campaigns .container {
+  padding: 28px 10%;
+}
+
+div.campaigns .container .heading {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.campaigns .container .heading .btn-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+
+div.campaigns .container .heading .btn-all a {
+  text-decoration: none;
+  color: #00a5b4;
+  size: 16px;
+}
+
+div.campaigns .container h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+div.campaigns .container .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.campaigns .container .cards .card {
+  width: 350px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fafafa;
+  -webkit-box-shadow: 0px 10px 26px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 10px 26px rgba(0, 0, 0, 0.06);
+}
+
+div.campaigns .container .cards .card .img {
+  height: 327px;
+}
+
+div.campaigns .container .cards .card .text {
+  padding: 20px 16px;
+}
+
+div.campaigns .container .cards .card .text h6 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+div.campaigns .container .cards .card .text h6 p {
+  font-size: 14px;
+}
+
+div.calculations {
+  width: 100%;
+  background-color: #f0fffc;
+}
+
+div.calculations .container {
+  padding: 28px 10%;
+  height: 100%;
+}
+
+div.calculations .container .calculations-box {
+  height: 100%;
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 22px;
+}
+
+div.calculations .container .calculations-box div.left {
+  width: 50%;
+  padding: 24px 32px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.calculations .container .calculations-box div.left div.loan-amount {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  margin-bottom: 50px;
+}
+
+div.calculations .container .calculations-box div.left div.loan-amount p {
+  margin-bottom: 4px;
+}
+
+div.calculations .container .calculations-box div.left div.loan-amount h6 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+div.calculations .container .calculations-box div.left div.loan-amount div.slidecontainer {
+  /* Mouse-over effects */
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+}
+
+div.calculations .container .calculations-box div.left div.loan-amount div.slidecontainer .slider {
+  -webkit-appearance: none;
+  /* Override default CSS styles */
+  -moz-appearance: none;
+       appearance: none;
+  width: 100%;
+  /* Full-width */
+  height: 10px;
+  /* Specified height */
+  border-radius: 10px;
+  background: #E6F6F3;
+  /* Grey background */
+  outline: none;
+  /* Remove outline */
+  opacity: 0.7;
+  /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s;
+  /* 0.2 seconds transition on hover */
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+div.calculations .container .calculations-box div.left div.loan-amount div.slidecontainer .slider::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  color: #13bba4;
+}
+
+div.calculations .container .calculations-box div.left div.loan-amount div.slidecontainer .slider:hover {
+  opacity: 1;
+  /* Fully shown on mouse-over */
+}
+
+div.calculations .container .calculations-box div.left div.loan-amount div.slidecontainer .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  width: 20px;
+  /* Set a specific slider handle width */
+  height: 20px;
+  /* Slider handle height */
+  border-radius: 50%;
+  border: 4px solid white;
+  background: #00a5b4;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
+}
+
+div.calculations .container .calculations-box div.left div.loan-amount div.slidecontainer .amounts {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.calculations .container .calculations-box div.left div.loan-amount div.slidecontainer .amounts span {
+  font-size: 14px;
+}
+
+div.calculations .container .calculations-box div.left div.loan-period {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  margin-bottom: 50px;
+}
+
+div.calculations .container .calculations-box div.left div.loan-period p {
+  margin-bottom: 4px;
+}
+
+div.calculations .container .calculations-box div.left div.loan-period h6 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+div.calculations .container .calculations-box div.left div.loan-period div.slidecontainer {
+  /* Mouse-over effects */
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+}
+
+div.calculations .container .calculations-box div.left div.loan-period div.slidecontainer .slider {
+  -webkit-appearance: none;
+  /* Override default CSS styles */
+  -moz-appearance: none;
+       appearance: none;
+  width: 100%;
+  /* Full-width */
+  height: 10px;
+  /* Specified height */
+  border-radius: 10px;
+  background: #E6F6F3;
+  /* Grey background */
+  outline: none;
+  /* Remove outline */
+  opacity: 0.7;
+  /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s;
+  /* 0.2 seconds transition on hover */
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+div.calculations .container .calculations-box div.left div.loan-period div.slidecontainer .slider::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  color: #13bba4;
+}
+
+div.calculations .container .calculations-box div.left div.loan-period div.slidecontainer .slider:hover {
+  opacity: 1;
+  /* Fully shown on mouse-over */
+}
+
+div.calculations .container .calculations-box div.left div.loan-period div.slidecontainer .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  width: 20px;
+  /* Set a specific slider handle width */
+  height: 20px;
+  /* Slider handle height */
+  border-radius: 50%;
+  border: 4px solid white;
+  background: #00a5b4;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
+}
+
+div.calculations .container .calculations-box div.left div.loan-period div.slidecontainer .amounts {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.calculations .container .calculations-box div.left div.loan-period div.slidecontainer .amounts span {
+  font-size: 14px;
+}
+
+div.calculations .container .calculations-box div.left div.total {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+div.calculations .container .calculations-box div.right {
+  width: 50%;
+  background-color: #ffffff;
+  padding: 32px 24px;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.calculations .container .calculations-box div.right .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+div.calculations .container .calculations-box div.right .row input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+}
+
+div.calculations .container .calculations-box div.right .row input ::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+div.calculations .container .calculations-box div.right .row input :-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+div.calculations .container .calculations-box div.right .row input ::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+div.calculations .container .calculations-box div.right .row input ::placeholder {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+div.calculations .container .calculations-box div.right .row select {
+  width: 106px;
+  padding: 12px 10px;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+}
+
+div.calculations .container .calculations-box div.right .row select:first-child {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+div.calculations .container .calculations-box div.right .fourth-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.calculations .container .calculations-box div.right .fourth-row p {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+div.calculations .container .calculations-box div.right .fourth-row button {
+  background-color: #00a5b4;
+  padding: 14px 24px;
+  color: #ffffff;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  width: 160px;
+}
+
+div.partners-container {
+  padding: 28px 10%;
+}
+
+div.partners-container .partners .heading {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.partners-container .partners .heading .btn-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+
+div.partners-container .partners .heading .btn-all a {
+  text-decoration: none;
+  color: #00a5b4;
+  size: 16px;
+}
+
+div.partners-container .partners .partner-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.partners-container .partners .partner-logos .brand-box {
+  width: 135px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.useful-info-container {
+  padding: 28px 10%;
+  background-color: #f5fffc;
+  height: 503px;
+}
+
+.useful-info-container .useful-info-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.useful-info-container .useful-info-box h2 {
+  margin: 30px 0;
+}
+
+.useful-info-container .useful-info-box div.body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 21px;
+}
+
+.useful-info-container .useful-info-box div.body .left {
+  width: 567px;
+  background-color: #ffffff;
+  padding: 40px 10px 40px 40px;
+}
+
+.useful-info-container .useful-info-box div.body .left .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.useful-info-container .useful-info-box div.body .left .currency-boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.useful-info-container .useful-info-box div.body .left .currency-boxes .currency-box {
+  width: 173px;
+  height: 208px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.useful-info-container .useful-info-box div.body .left .currency-boxes .currency-box .currency {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.useful-info-container .useful-info-box div.body .left .currency-boxes .arrow-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+.useful-info-container .useful-info-box div.body .right {
+  width: 567px;
+  background-color: #ffffff;
+  padding: 40px;
+}
+
+.useful-info-container .useful-info-box div.body .right p {
+  margin-bottom: 40px;
+}
+
+.useful-info-container .useful-info-box div.body .right .select-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.useful-info-container .useful-info-box div.body .right .select-box .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+  border-bottom: 1.5px solid rgba(0, 165, 180, 0.2);
+}
+
+.useful-info-container .useful-info-box div.body .right .select-box .input input {
+  height: 48px;
+  border: none;
+}
+
+.useful-info-container .useful-info-box div.body .right .select-box .input select {
+  height: 48px;
+  border: none;
+}
+
+footer {
+  padding: 50px 10%;
+  height: 346px;
+  background-color: #212121;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .logo-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .logo-box .up > img {
+  margin-bottom: 16px;
+}
+
+footer .box {
+  width: 220px;
+}
+
+footer .box h5 {
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+footer .box p {
+  color: #bdbdbd;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  margin-bottom: 15px;
+}
+
+footer ul li a {
+  color: #bdbdbd;
+}
+
+footer ul div.socials {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=style.css.map */
