@@ -1,37 +1,6 @@
-// reset styles
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
-
-// variables
-$primary-color: #00a5b4;
-$secondary-color: #cefbff;
-$white: #ffffff;
-$grey-1: #bdbdbd;
-$grey-2: #616161;
-$grey-3: #424242;
-$grey-4: #212121;
-
-// mixins
-@mixin btn {
-  background-color: $primary-color;
-  padding: 14px 24px;
-  color: $white;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-}
-
-@mixin container {
-  padding: 28px 10%;
-}
+@import './reset';
+@import './variables';
+@import './mixins';
 
 // main
 div.main {
@@ -61,6 +30,12 @@ div.main {
         text-decoration: none;
         margin: 0 20px;
         color: $grey-3;
+      }
+
+      li {
+        img {
+          cursor: pointer;
+        }
       }
 
       .btn {
@@ -162,6 +137,11 @@ div.services-container {
         background-color: #fafafa;
         box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.06);
 
+        &:hover {
+          transform: scale(1.02);
+          transition: all 0.3s ease;
+        }
+
         div.img {
           height: 50%;
           position: relative;
@@ -229,10 +209,9 @@ div.services-container {
 }
 
 // campaigns
-div.campaigns {
-  .container {
-    @include container();
-
+div.campaigns-container {
+  @include container();
+  .campaigns {
     .heading {
       width: 100%;
       display: flex;
@@ -290,143 +269,138 @@ div.campaigns {
 }
 
 // calculations
-div.calculations {
-  width: 100%;
+div.calculations-container {
+  @include container();
   background-color: #f0fffc;
 
-  .container {
-    @include container();
+  .calculations {
     height: 100%;
+    margin: 20px 0;
+    display: flex;
+    gap: 22px;
 
-    .calculations-box {
-      height: 100%;
-      margin: 20px 0;
+    div.left {
+      width: 50%;
+      padding: 24px 32px;
+      background-color: $white;
+      border-radius: 6px;
       display: flex;
-      gap: 22px;
+      flex-direction: column;
+      justify-content: space-between;
 
-      div.left {
-        width: 50%;
-        padding: 24px 32px;
-        background-color: $white;
-        border-radius: 6px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+      div.loan-amount {
+        flex: 3;
+        margin-bottom: 50px;
 
-        div.loan-amount {
-          flex: 3;
-          margin-bottom: 50px;
-
-          p {
-            margin-bottom: 4px;
-          }
-
-          h6 {
-            font-size: 20px;
-            font-weight: 700;
-            margin-bottom: 20px;
-          }
-
-          .slidercontainer {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-
-            .amounts {
-              display: flex;
-              justify-content: space-between;
-            }
-          }
+        p {
+          margin-bottom: 4px;
         }
 
-        div.loan-period {
-          flex: 3;
-          margin-bottom: 50px;
-
-          p {
-            margin-bottom: 4px;
-          }
-
-          h6 {
-            font-size: 20px;
-            font-weight: 700;
-            margin-bottom: 20px;
-          }
-
-          .slidercontainer {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-
-            .amounts {
-              display: flex;
-              justify-content: space-between;
-            }
-          }
+        h6 {
+          font-size: 20px;
+          font-weight: 700;
+          margin-bottom: 20px;
         }
 
-        div.total {
-          flex: 1;
-          width: 100%;
+        .slidercontainer {
           display: flex;
+          flex-direction: column;
           justify-content: space-between;
-          align-items: flex-end;
 
-          h6 {
-            font-weight: 500;
+          .amounts {
+            display: flex;
+            justify-content: space-between;
           }
         }
       }
 
-      div.right {
-        width: 50%;
-        background-color: $white;
-        padding: 32px 24px;
-        border-radius: 6px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+      div.loan-period {
+        flex: 3;
+        margin-bottom: 50px;
 
-        .row {
+        p {
+          margin-bottom: 4px;
+        }
+
+        h6 {
+          font-size: 20px;
+          font-weight: 700;
+          margin-bottom: 20px;
+        }
+
+        .slidercontainer {
           display: flex;
-          gap: 10px;
+          flex-direction: column;
+          justify-content: space-between;
 
-          input {
-            width: 100%;
-            padding: 12px 16px;
-            border-radius: 4px;
-            border: 1px solid #e0e0e0;
-
-            ::placeholder {
-              color: rgba(0, 0, 0, 0.54);
-            }
+          .amounts {
+            display: flex;
+            justify-content: space-between;
           }
+        }
+      }
 
-          select {
-            width: 106px;
-            padding: 12px 10px;
-            border-radius: 4px;
-            border: 1px solid #e0e0e0;
+      div.total {
+        flex: 1;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
 
-            &:first-child {
-              color: rgba(0, 0, 0, 0.54);
-            }
+        h6 {
+          font-weight: 500;
+        }
+      }
+    }
+
+    div.right {
+      width: 50%;
+      background-color: $white;
+      padding: 32px 24px;
+      border-radius: 6px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .row {
+        display: flex;
+        gap: 10px;
+
+        input {
+          width: 100%;
+          padding: 12px 16px;
+          border-radius: 4px;
+          border: 1px solid #e0e0e0;
+
+          ::placeholder {
+            color: rgba(0, 0, 0, 0.54);
           }
         }
 
-        .fourth-row {
-          display: flex;
-          align-items: center;
+        select {
+          width: 106px;
+          padding: 12px 10px;
+          border-radius: 4px;
+          border: 1px solid #e0e0e0;
 
-          p {
-            font-size: 12px;
-            font-weight: 400;
+          &:first-child {
+            color: rgba(0, 0, 0, 0.54);
           }
+        }
+      }
 
-          button {
-            @include btn();
-            width: 160px;
-          }
+      .fourth-row {
+        display: flex;
+        align-items: center;
+
+        p {
+          font-size: 12px;
+          font-weight: 400;
+        }
+
+        button {
+          @include btn();
+          width: 160px;
         }
       }
     }
@@ -610,4 +584,4 @@ footer {
       justify-content: space-between;
     }
   }
-}
+};
